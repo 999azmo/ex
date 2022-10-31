@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>webEx1-1</title>
+  <style>
+    .clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+    }
+    body {
+      background: url(./images/webEx01.jpg) no-repeat fixed 50% / cover;
+    }
+    .page {
+      border: 3px solid lightpink;
+      width: 940px; 
+      /* height: 800px; */
+      margin: 10px auto;
+      background-color: #ddd;
+    }
+    .page header {
+      background-color: darkmagenta;
+      vertical-align: text-top; /* 부모 기준 정렬 */
+    }
+    .page header img {
+      border: 3px solid transparent;
+      border-radius: 50%;
+      width: 80px; height: 80px;
+      padding: 10px;
+    }
+    .page header section {
+      width: 250px;
+      display: inline-block;
+      color: aliceblue;
+      vertical-align: top;
+      padding-top: 20px;
+    }
+    .page header h1,.page header h2 {
+      margin: 0;
+    }
+    .page header ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background-color: gold;
+    }
+    .page header ul li {
+      margin: 0 auto 0 0;
+      float: left;
+    }
+    .page header ul li a {
+      font-weight: bold;
+      text-decoration: none;
+      color: darkmagenta;
+      display: block;
+      padding: 0 20px;
+      height: 40px;
+      line-height: 40px;
+    }
+    .page header ul li a:hover {
+      background-color: darkmagenta;
+      color: #fff;
+    }
+    .page main {
+      background-color: #f1eee9;
+    }
+    .page .mainCont {
+      width: 657px;
+      height: 600px;
+      float: left;
+    }
+    .page main .box {
+      width: 617px;
+      margin: 0;
+      padding: 30px 20px;
+      float: left;
+    }
+    .page main .box figure {
+      width: 300px; height: 230px;
+      border: 1px solid pink;
+      margin: 0;
+      background-color: #fff;
+      display: inline-block;
+      float: left;
+    }
+    .page main .box figure img {
+      margin: 5px;
+      margin-bottom: 0;
+      width: 290px; height: 190px;
+    }
+    .page main .box figure figcaption {
+      text-align: right;
+      margin-right: 5px;
+      color: grey;
+      font-style: italic;
+    }
+    .page main .box section {
+      width: 290px;
+      margin-left: 20px;
+      display: inline-block;
+      float: left;
+    }
+    .page main h3 {
+      font-size: 26px;
+      margin: 0;
+    }
+    .page main h4 {
+      color: #e51824;
+      font-size: 20px;
+    }
+
+    .page main aside {
+      background-color: #fff;
+      width: 280px; 
+      height: 600px;
+      border-left: 3px #e51824 solid;
+      float: left;
+    }
+    .page main aside h3 {
+      color: #e51824;
+      padding: 20px;
+      padding-top: 30px;
+    }
+    .page main aside ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .page main aside ul a {
+      text-decoration: none;
+      color: #000;
+      display: block;
+      padding: 20px;
+      border-bottom: 3px solid #e51824;
+    }
+    .page main aside ul a:hover {
+      background-color: salmon;
+      color: #fff;
+    }
+
+    .page main aside p {
+      padding-left: 20px;
+      margin: 0;
+    }
+    .page footer {
+      height: 34px;
+      line-height: 34px;
+      padding-left: 10px;
+      background-color: darkmagenta;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <img src="https://pixabay.com/get/gb1a074f86187a4d7f59c311e8af37896e6fd90caa24308863dd5f80ac9f0a44b9660f15528843dc224b854ede1d0c28f968b819174a509fec0c3489eea406a65ae5e4f381f53de89449daac01071f424_640.jpg" alt="logo">
+      <section>
+        <h1>Kim's Kitchen</h1>
+        <h2>Cooking Class</h2>
+      </section>
+      <ul class="clearfix">
+        <li><a href="#">홈</a></li>
+        <li><a href="#">소개</a></li>
+        <li><a href="#">교실</a></li>
+        <li><a href="#">케이터링</a></li>
+        <li><a href="#">연락처</a></li>
+      </ul>
+    </header>
+    <main class="clearfix">
+      <div class="mainCont">
+        <article class="box box1">
+          <figure>
+            <img src="https://pixabay.com/get/ge74dc4d86e8a1c13a317d64894c1ab4561462b6e3e6ee89287c0b2adff5f9bb40a1d3b9f9c5eafcdc7781d29091eba55b4c6ddb34aa438e7a14c4dcd2dca6660c8ff11cd3177447cad575c40d54774f1_640.jpg" alt="채식">
+            <figcaption>Oriental Salad</figcaption>
+          </figure>
+          <section>
+            <h3>채식주의자</h3>
+            <h4>런던에서의 5주 코스</h4>
+            <p>5주간 채식주의자 음식에 대해 소개하고 쌀과 국수 요리를 가르친다.</p>
+          </section>
+        </article>
+        <article class="box box2">
+          <figure>
+            <img src="https://pixabay.com/get/g56cd3cafc771937c2ca3d18ab500a7ceffc2ddb9f40a8baa72a3ac4a57285a1f083c82d9ebe3174d12250fa01c73e6829ee9a46bd6c146952a75a56e0769877d9d19706b2eef4c28982e511eaf5aab46_640.jpg" alt="소스">
+            <figcaption>Soy Sauce</figcaption>
+          </figure>
+          <section>
+            <h3>소스 마스터클래스</h3>
+            <h4>1일 워크샵</h4>
+            <p>1일 집중 코스에서는 다양한 요리에서 사용할 수 있는 가장 맛있는 소스를 만드는 방법을 살펴본다.</p>
+          </section>
+        </article>
+      </div>
+      <aside>
+        <h3>인기요리법</h3>
+        <ul>
+          <li><a href="#">후라이드</a></li>
+          <li><a href="#">고추바사삭</a></li>
+          <li><a href="#">양념치킨</a></li>
+          <li><a href="#">강정</a></li>
+        </ul>
+        <h3>연락처</h3>
+        <p>경기 수원시 팔달구 매산동</p>
+      </aside>
+    </main>
+    <footer>&copy; Kim's Kitchen 김씨네 키친</footer>
+  </div>
+</body>
+</html>
