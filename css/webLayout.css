@@ -209,7 +209,7 @@ ul {
   height: 450px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
   overflow: hidden;
-  transition: .5s;
+  transition: .3s;
 }
 .service .box-s article:hover {
   transform: scale(1.1);
