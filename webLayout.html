@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>webLayout</title>
+  <!-- 초기화 -->
+  <link rel="stylesheet" href="./common/minireset.min.css">
+  <!-- google icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+  <!-- font -->
+  <link rel="stylesheet" href="./css/fonts.css">
+  <!-- 작성 -->
+  <link rel="stylesheet" href="./css/webLayout.css">
+</head>
+<body>
+  <!-- 
+    1. 드롭다운 메뉴 - hover 소메뉴 3개 + bgcolor 블랙
+    2. 위로 버튼
+    3. backdrop-filter
+    4. video
+    5. Let's talk 배경 이미지 고정
+  -->
+
+  <!-- header -->
+  <header>
+    <nav>
+      <h1><a href="#">dyami</a></h1>
+      <ul id="menu">
+        <li>
+          <a href="#">about</a>
+          <ul class="inMenu">
+            <li><a href="#">MENU1</a></li>
+            <li><a href="#">MENU2</a></li>
+            <li><a href="#">MENU3</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">service</a>
+          <ul class="inMenu">
+            <li><a href="#">MENU1</a></li>
+            <li><a href="#">MENU2</a></li>
+            <li><a href="#">MENU3</a></li>
+            <li><a href="#">MENU4</a></li>
+          </ul>
+        </li>
+        <li><a href="#">product</a></li>
+        <li><a href="#">board</a></li>
+      </ul>
+      <ul id="register">
+        <li><a href="#">login</a></li>
+        <li><a href="#">join</a></li>
+      </ul>
+    </nav>
+    <div class="mainBg"></div>
+  </header>
+  <!-- main -->
+  <main>
+    <div class="box brand">
+      <section>
+        <h3>branding</h3>
+        <p>것이 보내는 끓는 운다. 바로 인도하겠다는 넣는 있으랴? 얼마나 위하여 인간의 못하다 품으며, 옷을 거선의 가슴에 이상은 보라. 우리의 든 피고 이것은 물방아 방황하였으며, 새 소리다.이것은 있는가?</p>
+      </section>
+      <section>
+        <h3>development</h3>
+        <p>없는 이것은 별과 힘차게 착목한는 품으며, 얼마나 길지 무엇을 칼이다. 그들은 목숨이 군영과 새가 귀는 그리하였는가? 평화스러운 원대하고, 방황하였으며, 위하여, 충분히 그들은 말이다. 소리다.이것은 같이 그들을 듣기만 품었기 것이 이상의 풀밭에 것이다.</p>
+      </section>
+      <section>
+        <h3>analysis</h3>
+        <p>그들은 같으며, 구하지 것이다. 소리다.이것은 따뜻한 피가 이상의 부패뿐이다.</p>
+      </section>
+      <section>
+        <h3>marketing</h3>
+        <p>기쁘며, 넣는 소리다.이것은 눈에 하는 그들을 우리의 황금시대다. 황금시대를 청춘의 끓는 맺어, 것은 지혜는 시들어 약동하다.</p>
+      </section>
+    </div>
+    <div class="box picture">
+      <div class="imgBox"><div class="backdrop"></div></div>
+      <div class="imgBox"><div class="backdrop"></div></div>
+      <div class="imgBox"><div class="backdrop"></div></div>
+      <div class="imgBox"><div class="backdrop">neon</div></div>
+      <div class="imgBox"><div class="backdrop">life</div></div>
+      <div class="imgBox"><div class="backdrop"></div></div>
+      <div class="imgBox"><div class="backdrop"></div></div>
+    </div>
+    <div class="box bsns">
+      <div class="headline">
+        <h2 class="line">our business</h2>
+        <p>Fusce vel mollis urna. Cras in est efficitur, dignissim justo in, eleifend ipsum. Fusce a ligula mollis, accumsan lectus ut, feugiat nisl.</p>
+      </div>
+      <div class="bsnsList">
+        <article>
+          <img src="./images/cyberpunk-b-01.jpg" alt="b-img1">
+          <div class="txt-b">
+            <h4>1. Brokerage</h4>
+            <p>Curabitur tincidunt lorem lorem, non luctus ligula pulvinar sed.</p>
+          </div>
+        </article>
+        <article>
+          <img src="./images/cyberpunk-b-02.jpg" alt="b-img2">
+          <div class="txt-b">
+            <h4>2. Banking</h4>
+            <p>Curabitur tincidunt lorem lorem, non luctus ligula pulvinar sed.</p>
+          </div>
+        </article>
+        <article>
+          <img src="./images/cyberpunk-b-03.jpg" alt="b-img3">
+          <div class="txt-b">
+            <h4>3. Contracts</h4>
+            <p>Curabitur tincidunt lorem lorem, non luctus ligula pulvinar sed.</p>
+          </div>
+        </article>
+        <article>
+          <img src="./images/cyberpunk-b-04.jpg" alt="b-img4">
+          <div class="txt-b">
+            <h4>4. agency</h4>
+            <p>Curabitur tincidunt lorem lorem, non luctus ligula pulvinar sed.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="box youtube">
+      <h2>our youtube</h2>
+      <p>뭇 뼈 같이, 희망의 든 인간은 것이다. 바이며, 새가 얼음에 청춘의 되는 가치를 그들의 모래뿐일 황금시대의 칼이다. 인간의 청춘 얼마나 끝까지 철환하였는가? 맺어, 무엇을 뜨거운지라, 위하여 뿐이다. 자신과 용기가 예가 예수는 모래뿐일 이상 인생을 맺어, 황금시대다.</p>
+      <div class="box-v">
+        <video src="./images/cyberpunk-v02.mp4" muted autoplay loop></video>
+      </div>
+    </div>
+    <div class="box service">
+      <h2 class="line">our service</h2>
+      <div class="box-s">
+        <article>
+          <img src="./images/cyberpunk-s-01.jpg" alt="s-img1">
+          <h4>title 1</h4>
+          <p>피가 이상의 아름답고 우리 피에 그들의 얼마나 날카로우나 칼이다.</p>
+        </article>
+        <article>
+          <img src="./images/cyberpunk-s-02.jpg" alt="s-img2">
+          <h4>title 2</h4>
+          <p>보배를 작고 스며들어 피다. 만물은 많이 청춘에서만 것은 얼마나 보라.</p>
+        </article>
+        <article>
+          <img src="./images/cyberpunk-s-03.jpg" alt="s-img3">
+          <h4>title 3</h4>
+          <p>이상, 봄바람을 든 능히 내려온 말이다. 가지에 것은 찾아 지혜는 든 칼이다.</p>
+        </article>
+        <article>
+          <img src="./images/cyberpunk-s-04.jpg" alt="s-img4">
+          <h4>title 4</h4>
+          <p>천고에 가치를 피가 천자만홍이 원대하고, 이상을 지혜는 이상은 실현에 보라.</p>
+        </article>
+      </div>
+    </div>
+    <div class="box location">
+      <h2>location</h2>
+      <div class="map">
+        <address>
+          주소: 경기도 수원시 팔달구 매산로<br>
+          연락처: 031-123-1234
+        </address>
+      </div>
+      <table>
+        <tr>
+          <th>ADDRESS</th>
+          <td>795 Folsom Ave, Suite 600 San Francisco</td>
+        </tr>
+        <tr>
+          <th>TEL</th>
+          <td>02-1234-5678</td>
+        </tr>
+        <tr>
+          <th>FAX</th>
+          <td>02-1234-5678</td>
+        </tr>
+        <tr>
+          <th>SUB</th>
+          <td>Working at the nexus of aesthetics and sustainability to craft meaningful design ideas that endure.</td>
+        </tr>
+        <tr>
+          <th>bus</th>
+          <td>This theme does everything you could possibly want it to do and, it is beautifully designed.</td>
+        </tr>
+      </table>
+    </div>
+    <div class="box talk">
+      <h2>let's talk</h2>
+      <p>Nulla sed neque vitae sapien pharetra sagittis nec eu nisi.</p>
+      <p>Nam vitae neque tellus. Duis erat erat, suscipit vitae mauris ut, dignissim blandit lacus.</p>
+      <button><a href="#">Contact us</a></button>
+    </div>
+  </main>
+  <!-- footer -->
+  <footer>
+    <p>Copyrights &copy; 2022 All Rights Reserved by DYAMI.</p>
+    <p>Terms of Use / Privacy Policy</p>
+  </footer>
+  <div class="top">
+    <a href="#"><span class="material-symbols-outlined">
+      expand_less
+      </span></a>
+  </div>
+</body>
+</html>

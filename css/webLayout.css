@@ -1,0 +1,313 @@
+@charset "utf-8";
+/* body */
+body {
+  font-family: 'Pretendard',-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+  background: url(../images/cyberpunkBg.jpg) no-repeat fixed 0 / cover;
+}
+
+/* 공용? */
+.line::after {
+  content: "";
+  background-color: #000;
+  width: 50px; height: 2px;
+  display: block;
+  margin: 50px auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+header, h1, h2, h3, h4 {
+  font-family: 'Pretendard', sans-serif;
+}
+h2, h3, h4 {
+  text-align: center;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.box h2 { font-size: 48px;}
+.box h3 { font-size: 32px;}
+.box h4 { font-size: 23px;}
+
+/* header */
+header{
+  background: url(../images/cyberpunkBg.jpg) no-repeat scroll 0 30% / cover;
+}
+.mainBg { 
+  height: 52.60vw; 
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  text-transform: uppercase;
+  height: 60px; line-height: 60px;
+  box-sizing: border-box;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+}
+h1 {
+  font-weight: 900;
+  font-size: 30px;
+  padding: 0 20px;
+  margin: 0 auto 0 0;
+  color: #fff;
+}
+ul {
+  display: flex;
+  font-size: 20px;
+  color: #fff;
+}
+#menu {
+  font-weight: 700;
+}
+#menu li a {
+  display: block;
+  padding: 0 20px;
+}
+#menu li > .inMenu {
+  display: none;
+}
+#menu li:hover a {
+  background-color: rgba(255, 255, 255, .5);
+  color: #000;
+}
+#menu li:hover .inMenu{
+  display: block;
+}
+#menu li .inMenu li {
+  text-align: center;
+}
+#menu li .inMenu li:hover a {
+  background-color: rgba(0, 0, 0, .6);
+  color: #fff;
+}
+
+#register {
+  margin-right: 20px;
+}
+#register li a {
+  display: block;
+  padding-left: 10px;
+}
+#register li:hover a {
+  color: #C52257;
+}
+
+/* main */
+.box {
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 100px 96px;
+}
+.brand {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 19.7917vw;
+}
+.brand section {
+  padding: 30px;
+  overflow: hidden;
+}
+.brand section:nth-child(odd) {
+  border-right:1px solid #000;
+}
+.brand section:nth-child(n+1):nth-child(-n+2) {
+  border-bottom:1px solid #000;
+}
+.brand section h3 {
+  text-align: left;
+  margin: 2.6vw auto;
+}
+
+.picture {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 20vw;
+}
+.picture .imgBox { 
+  background: no-repeat 50% 50% / cover;
+}
+.picture .imgBox:nth-child(1) { background-image: url(../images/cyberpunk-p-03.jpg); grid-row: span 2; grid-column: span 2;}
+.picture .imgBox:nth-child(2) { background-image: url(../images/cyberpunk-p-01.jpg);}
+.picture .imgBox:nth-child(3) { background-image: url(../images/cyberpunk-p-00.jpg);}
+.picture .imgBox:nth-child(4) { background-image: url(../images/cyberpunk-p-05.jpg); grid-row: 2/3; grid-column: 3/5;}
+.picture .imgBox:nth-child(5) { background-image: url(../images/cyberpunk-p-02.jpg); grid-column: 1/3;}
+.picture .imgBox:nth-child(6) { background-image: url(../images/cyberpunk-p-04.jpg);}
+.picture .imgBox:nth-child(7) { background-image: url(../images/cyberpunk-p-06.jpg);}
+.picture .imgBox .backdrop {
+  width: 100%; height: 100%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Fugaz One', cursive;
+  /* font-family: 'Audiowide', cursive; */
+  font-size: 5vw;
+  
+  display: none;
+}
+.picture .imgBox:hover .backdrop { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px) contrast(1.3) grayscale(.5);
+}
+
+.bsns { padding-bottom: 0;}
+.bsns p { font-size: 19px; text-align: center;}
+.bsns .headline {
+  margin-bottom: 50px;
+}
+.bsns .headline p {
+  width: 60%;
+  margin: 0 auto;
+}
+.bsns .bsnsList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.bsns .bsnsList article {
+  width: 50%; height: 52.474vw;
+  box-sizing: border-box;
+  padding: 0 1.66vw;
+
+  display: grid;
+  grid-template-rows: 85% 15%;
+
+  overflow: hidden;
+}
+.bsns .bsnsList article img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bsns .bsnsList article h4 {
+  margin: 20px 0 10px;
+  text-transform: none;
+}
+
+.youtube {
+  background-color: #EEEEEE;
+  display: grid;
+  grid-template-columns: 1fr 55%;
+  grid-template-rows: 7vw 25vw;
+  padding-bottom: 50px;
+}
+.youtube h2 { text-align: left;}
+.youtube .box-v {
+  grid-column: 1/3;
+  overflow: hidden;
+}
+.youtube .box-v video{
+  object-fit: cover;
+  transform: translateY(-20%);
+
+}
+
+.service .box-s {
+  display: flex;
+  justify-content: center;
+}
+.service .box-s article {
+  margin: 1vw;
+  width: 340px;
+  height: 450px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+  overflow: hidden;
+}
+.service .box-s article:hover {
+  transform: scale(1.1);
+  transition: .5s;
+}
+.service .box-s article img {
+  width: 100%;
+  height: 65%;
+  object-fit: cover;
+}
+.service .box-s :is(h4, p) {
+  margin: 20px;
+  text-align: left;
+}
+.location .map {
+  margin-top: 30px;
+  height: 22.9167vw;
+  background-color: #ddd;
+}
+.location .map address {
+  display: inline-block;
+  background-color: rgba(0, 0, 0,.7);
+  color: #fff;
+  font-style: normal;
+  padding: 20px;
+}
+.location table {
+  width: 100%;
+  border-bottom: 3px solid #000;
+}
+.location table tr {
+  text-align: left;
+  text-indent: 20px;
+  border-bottom: 1px solid #000;
+  height: 70px;
+}
+.location table tr th { width: 180px;}
+
+.talk {
+  height: 26.0417vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+
+  overflow: hidden;
+}
+.talk p {
+  margin: 10px auto;
+  text-align: center;
+  font-size: 24px;
+}
+.talk button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  margin: 50px auto;
+  color: #fff;
+  font-size: 20px;
+}
+.talk button a {
+  display: block;
+  padding: 15px 30px;
+}
+.talk button:hover {
+  background-color: #fff;
+  color: rgba(0, 0, 0, .8);
+}
+
+footer {
+  background-color: #fff;
+  height: 9.1146vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer p {
+  margin-bottom: 1.5vw;
+}
+
+.top {
+  position: fixed;
+  right: 30px; bottom: 48px;
+  overflow: hidden;
+}
+.top a {
+  background-color: rgba(0, 0, 0, .8);
+  display: block;
+  width: 48px; height: 48px;
+  color: #fff;
+}
+
+.top a span {
+  font-size: 48px;
+}
