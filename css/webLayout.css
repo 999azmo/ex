@@ -60,6 +60,7 @@ ul {
   font-size: 20px;
   color: #fff;
 }
+
 #menu {
   font-weight: 700;
 }
@@ -128,25 +129,21 @@ ul {
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 20vw;
 }
-.picture .imgBox { 
-  background: no-repeat 50% 50% / cover;
-}
-.picture .imgBox:nth-child(1) { background-image: url(../images/cyberpunk-p-03.jpg); grid-row: span 2; grid-column: span 2;}
-.picture .imgBox:nth-child(2) { background-image: url(../images/cyberpunk-p-01.jpg);}
-.picture .imgBox:nth-child(3) { background-image: url(../images/cyberpunk-p-00.jpg);}
-.picture .imgBox:nth-child(4) { background-image: url(../images/cyberpunk-p-05.jpg); grid-row: 2/3; grid-column: 3/5;}
-.picture .imgBox:nth-child(5) { background-image: url(../images/cyberpunk-p-02.jpg); grid-column: 1/3;}
-.picture .imgBox:nth-child(6) { background-image: url(../images/cyberpunk-p-04.jpg);}
-.picture .imgBox:nth-child(7) { background-image: url(../images/cyberpunk-p-06.jpg);}
+.picture .imgBox { background: no-repeat 50% 50% / cover;}
+.picture .imgBox:nth-child(1) { background-image: url(../images/cyberpunk-p-01.jpg); grid-row: span 2; grid-column: span 2;}
+.picture .imgBox:nth-child(2) { background-image: url(../images/cyberpunk-p-02.jpg);}
+.picture .imgBox:nth-child(3) { background-image: url(../images/cyberpunk-p-03.jpg);}
+.picture .imgBox:nth-child(4) { background-image: url(../images/cyberpunk-p-04.jpg); grid-row: 2/3; grid-column: 3/5;}
+.picture .imgBox:nth-child(5) { background-image: url(../images/cyberpunk-p-05.jpg); grid-column: 1/3;}
+.picture .imgBox:nth-child(6) { background-image: url(../images/cyberpunk-p-06.jpg);}
+.picture .imgBox:nth-child(7) { background-image: url(../images/cyberpunk-p-07.jpg);}
 .picture .imgBox .backdrop {
   width: 100%; height: 100%;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Fugaz One', cursive;
-  /* font-family: 'Audiowide', cursive; */
   font-size: 5vw;
-  
   display: none;
 }
 .picture .imgBox:hover .backdrop { 
@@ -158,9 +155,7 @@ ul {
 
 .bsns { padding-bottom: 0;}
 .bsns p { font-size: 19px; text-align: center;}
-.bsns .headline {
-  margin-bottom: 50px;
-}
+.bsns .headline { margin-bottom: 50px;}
 .bsns .headline p {
   width: 60%;
   margin: 0 auto;
@@ -173,10 +168,8 @@ ul {
   width: 50%; height: 52.474vw;
   box-sizing: border-box;
   padding: 0 1.66vw;
-
   display: grid;
   grid-template-rows: 85% 15%;
-
   overflow: hidden;
 }
 .bsns .bsnsList article img{
@@ -204,7 +197,6 @@ ul {
 .youtube .box-v video{
   object-fit: cover;
   transform: translateY(-20%);
-
 }
 
 .service .box-s {
@@ -264,7 +256,6 @@ ul {
   background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
   text-align: center;
-
   overflow: hidden;
 }
 .talk p {
@@ -311,7 +302,6 @@ footer p {
   width: 48px; height: 48px;
   color: #fff;
 }
-
 .top a span {
   font-size: 48px;
 }
