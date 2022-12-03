@@ -10,7 +10,6 @@ html {
   font-size: 18px;
   line-height: 1.5;
   color: var(--baseColor);
-
   scroll-behavior: smooth;
 }
 ::selection {
@@ -233,7 +232,6 @@ h4 {
 }
 .tabClick {
   position: relative;
-
 }
 .branding {
   border: none;
