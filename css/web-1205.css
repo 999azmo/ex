@@ -65,7 +65,7 @@ nav > ul > li > a {
   padding: 39px 15px;
   font-weight: 700;
   letter-spacing: 1.5px;
-  font-size: 20px;
+  font-size: 19px;
   height: 100px;
 }
 nav ul li a:hover {
@@ -116,7 +116,7 @@ header .headBg {
 }
 header .headBg .firstBg {
   height: 100%;
-  background: url(../../images/1205-hero-2.jpg) no-repeat 50% / cover;
+  background: url(../images/1205-hero-2.jpg) no-repeat 50% / cover;
   border-radius: 70px;
   padding: 0 120px;
   display: flex;
@@ -125,18 +125,19 @@ header .headBg .firstBg {
 }
 header .headBg h2 {
   letter-spacing: 2px;
+  line-height: 1.2;
   font-weight: 900;
   font-size: 50px;
   color: #222222;
 
-  animation: moveDown 1s both;
+  animation: moveDown 1.5s both;
 }
 header .headBg p {
   font-family: "Malgun Gothic";
   font-size: 22px;
-  margin: 48px 0 10px;
+  margin: 30px 0 10px;
 
-  animation: moveDown 1s both;
+  animation: moveDown 1.5s .3s both;
 }
 header .headBg .ghostBtn {
   font-size: 16px;
@@ -147,7 +148,7 @@ header .headBg .ghostBtn {
   text-align: center;
   transition: .2s;
 
-  animation: moveUp 1s both;
+  animation: moveUp 1.5s both;
 }
 header .headBg .ghostBtn:hover{
   background-color: #333333;
